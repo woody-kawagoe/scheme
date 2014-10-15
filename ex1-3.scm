@@ -1,0 +1,7 @@
+(print (define func x y z)
+       (cond (> x y)
+	     (cond (> y z) (+ (* x x) (* y y)))
+	     (cond (> x z) (+ (* z z) (* y y)))
+        else (+ (* y y) (* z z)))
+	(func 2 3 4)
+)
